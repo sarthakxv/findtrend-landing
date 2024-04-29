@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import "../styles/Home.module.css";
@@ -25,7 +25,7 @@ const Navbar = () => {
         id="navbar-solid-bg"
       >
         <div className="flex flex-row justify-between text-gray2 font-semibold w-[488px]">
-          <a href="" className="">
+          <a href="/" className="">
             About
           </a>
           <a href="">How It Works</a>
@@ -119,7 +119,7 @@ const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                class="inline-flex items-center p-2 mr-[2rem] text-sm text-primary rounded-lg sm:hidden"
+                className="inline-flex items-center p-2 mr-[2rem] text-sm text-primary rounded-lg sm:hidden"
                 aria-controls="navbar-solid-bg"
                 aria-expanded="false"
               >
